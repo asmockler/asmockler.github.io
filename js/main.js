@@ -1,27 +1,5 @@
 $(document).ready(function(){
 
-// I GOT RID OF THE NAVBAR SO THIS DOESN'T REALLY NEED TO BE HERE
-	// positionNavbar = function () {
-	// 	var navWidth = $('nav').width();
-	// 	var windowWidth = $(window).width();
-	// 	var navPosition = windowWidth - navWidth;
-
-	// 	if (windowWidth < 768) {
-	// 		$('.navbar-fixed-top').css({
-	// 			'left': '0',
-	// 			'width': '100%'
-	// 		});
-	// 	} else {
-	// 		$('.navbar-fixed-top').css({
-	// 			'left': navPosition,
-	// 			'width': '355px'
-	// 		});
-	// 	}
-	// }
-
-	// positionNavbar();
-	// $(window).resize(positionNavbar);
-
 // SETTING UP THE ONEPAGE SCROLL, INCLUDING THE COLOR CHANGE FUNCTION
 	$(".main").onepage_scroll({
 		sectionContainer: "section",
@@ -51,19 +29,4 @@ $(document).ready(function(){
 			console.log('bar');
 		}
 	});
-
-// MOBILE COLOR CHANGING ON SCROLL
-
-	console.log(window.pageYOffset);
-
-    $(window).bind('mousewheel DOMMouseScroll MozMousePixelScroll scroll keyup keydown', function() {console.log('foo')});
-    $(window).unbind('scroll', function(){
-    	$(window).bind('scroll', function(){
-    		console.log('bar');
-    	})
-    });
-
-	// $(document).bind('scroll', function(){
-	// 	$('body').fadeOut();
-	// });
 });
