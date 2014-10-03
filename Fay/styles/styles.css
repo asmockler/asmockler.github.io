@@ -24,9 +24,12 @@ body{
 		background: linear-gradient(to left, rgba(255,255,255,.8) 0%, rgba(246,246,246,0.5) 60%, rgba(255,255,255,0) 100%);
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 );
 	max-width: 200px;
+	min-width:100px;
 	margin: 5px 0 0 0;
 	padding: 10px;
 	text-align: right;
+	position:relative;
+	right: -200px;
 }
 .jumbotron{
 	background: -webkit-linear-gradient(90deg, #4CB8C4 10%, #3CD3AD 90%); /* Chrome 10+, Saf5.1+ */
