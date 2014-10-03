@@ -1,0 +1,35 @@
+html{
+	height:100%;
+}
+body{
+	font-family: 'Open Sans', 'Helvetica Neue', Arial;
+}
+.jumbotron{
+	background: -webkit-linear-gradient(90deg, #4CB8C4 10%, #3CD3AD 90%); /* Chrome 10+, Saf5.1+ */
+	background:    -moz-linear-gradient(90deg, #4CB8C4 10%, #3CD3AD 90%); /* FF3.6+ */
+	background:     -ms-linear-gradient(90deg, #4CB8C4 10%, #3CD3AD 90%); /* IE10 */
+	background:      -o-linear-gradient(90deg, #4CB8C4 10%, #3CD3AD 90%); /* Opera 11.10+ */
+	background:         linear-gradient(90deg, #4CB8C4 10%, #3CD3AD 90%); /* W3C */
+}
+.jumbotron h1{
+	font-weight:300;
+	font-size:100px;
+}
+.jumbotron .lead{
+	font-size:35px;
+	padding-bottom:30px;
+	opacity:.85;
+	opacity:.85;
+}
+code{
+	color:#F55EA6;
+	background-color:#f2f2f2;
+}
+.menu{
+	position:absolute;
+	right:0;
+	margin:5px 10px 0 0;
+}
+code.attr{
+	color:#1CAD89;
+}

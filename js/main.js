@@ -11,13 +11,15 @@ $(document).ready(function(){
 		responsiveFallback: 767,
 		beforeMove: function(index){
 			var color;
-			if (index == 1){
+			if (index == 1) {
+				color = "#ddd"
+			} else if (index == 2){
 				color = '#2ECC71'
-			} else if (index == 2) {
-				color = '#1abc9c'
 			} else if (index == 3) {
-				color = '#2980b9'
+				color = '#1abc9c'
 			} else if (index == 4) {
+				color = '#2980b9'
+			} else if (index == 5) {
 				color = '#336E7B'
 			}
 
@@ -29,4 +31,8 @@ $(document).ready(function(){
 			console.log('bar');
 		}
 	});
+
+	$('#about').on('click', function(){
+		$(".main").moveTo(2);
+	})
 });

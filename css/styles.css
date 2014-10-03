@@ -5,7 +5,7 @@ hr{
 }
 
 body{
-	background-color:#2ECC71; /* This gets swapped out on scroll in the javascript */
+	background-color:#ddd; /* This gets swapped out on scroll in the javascript */
 	font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 	color:#FFFFFF;
 }
@@ -125,7 +125,7 @@ a#isys:hover{
 	top:-15px;
 }
 
-#two img{
+#three img{
 	position:absolute;
 	bottom:0;
 	right:0;
@@ -133,7 +133,7 @@ a#isys:hover{
 
 /* Third Section */
 
-#three .lead{
+#four .lead{
 	color: rgba(255,255,255,.7)
 }
 
@@ -150,11 +150,11 @@ dl{
 	box-shadow: 15px 15px 20px rgba(0,0,0,.5);
 }
 
-#four a{
+#five a{
 	text-decoration: underline
 }
 
-#four .col-md-3{
+#five .col-md-3{
 	margin-top: 50px;
 }
 
@@ -188,7 +188,7 @@ dl{
 		margin-left:0px;
 	}
 
-	#one > div > h2 > i.fa-2x{
+	#two > div > h2 > i.fa-2x{
 		font-size:30px;
 	}
 
@@ -196,11 +196,11 @@ dl{
 		display:none;
 	}*/
 
-	#two > div > div > div > h1:first-of-type{
+	#three > div > div > div > h1:first-of-type{
 		margin-bottom:0;
 	}
 
-	#two > div > div > div > h1:nth-of-type(2){
+	#three > div > div > div > h1:nth-of-type(2){
 		margin-top:0;
 		margin-bottom:0;
 		line-height:70px;
@@ -226,7 +226,7 @@ dl{
 		top:0;
 	}
 
-	#two img{
+	#three img{
 		display:none;
 
 	}
