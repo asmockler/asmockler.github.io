@@ -7,9 +7,48 @@
 	<title>Fay Test Page</title>
 	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
-	<!-- <script src="scripts/lib/require.js" data-main="scripts/main"></script> -->
+	<link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
+
+	<div class="menu">
+		<div class="fay-menu-float fay-menu-spin-close pull-right" data-fay-color="white" data-fay-size="75px" data-fay-opacity=".75"></div>
+		<ul>
+			<li>Test</li>
+			<li>Again</li>
+			<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus odio vitae dolorem sequi itaque nam quis sit quod repellat nisi, nulla aut autem eum corporis perspiciatis quidem. Odio, quo, quia.</li>
+		</ul>
+	</div>
+	<div class="jumbotron">
+		<div class="container">
+			<h1 class="text-center">Fay.js</h1>
+			<p class="lead text-center">An animated SVG icon library for <br> discerning developers</p>
+		</div>
+	</div>
+	<div class="container">
+		<h2>Fay is an easy-to-implement animated icon library.</h2>
+		<p>Icons are added to any element by including simple class names such as <code>.fay-menu</code> or <code>.fay-chevron</code>.</p>
+
+		<h2>Say Goodbye to Rough Edges</h2>
+		<p>Fay icons are drawn with svg in the browser - this means that they will never be pixelated and are infinitely scalable.</p>
+
+		<h2>Fay Plays Nice with Everyone</h2>
+		<p>Fay was built with the wonderful Raphael.js library and with compatibility in mind. Icons will render and animate beautifully on tons of browsers.</p>
+
+		<h2>Options, Options, Options</h2>
+		<p>Fay was built to be as creative and flexible as you are. Tons of options can be adjusted right in the html for quick and flexible designs. Your icon library shouldn't lock you in.</p>
+		<p><code>data-fay-scale</code> - Scale the icons to be any size. Default is 50. Number only - do not include px.</p>
+		<p><code>data-fay-stroke</code> - Change the stroke width of the icon. Default is 2. Scales automatically if not declared.</p>
+
+		<h2>Need it inside an element? Yeah, Fay does that, too.</h2>
+		<p>Here is an example with a bootstrap button: <pre>&lt;button class="btn btn-default fay-caret"&gt; Drop it like it's hot &lt;/button&gt;</pre> renders this:</p>
+		<button class="btn btn-default fay-chevron" data-fay-size="10"> Drop it like it's hot</button>
+
+		<div class="fay-menu"></div>
+		<div class="fay-menu fay-menu-spin-open"></div>
+		<div class="fay-menu fay-menu-float" data-fay-size="200"></div>
+		<div class="fay-chevron fay-chev-flip-down" data-fay-size="100"></div>
+	</div>
 
 	<div class="container" style="min-height:1000px;margin-bottom:250px">
 		<div class="row">
@@ -99,79 +138,10 @@
 			</div>
 		</div>
 	</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	<div class="menu">
-		<div class="fay-menu fay-menu-float" data-fay-color="white" data-fay-size="75px" data-fay-opacity=".75"></div>
-	</div>
-	<div class="jumbotron">
-		<div class="container">
-			<h1 class="text-center">Fay.js</h1>
-			<p class="lead text-center">An animated SVG icon library for <br> discerning developers</p>
-		</div>
-	</div>
-	<div class="container">
-		<h2>Fay is an easy-to-implement animated icon library.</h2>
-		<p>Icons are added to any element by including simple class names such as <code>.fay-menu</code> or <code>.fay-chevron</code>.</p>
-
-		<h2>Say Goodbye to Rough Edges</h2>
-		<p>Fay icons are drawn with svg in the browser - this means that they will never be pixelated and are infinitely scalable.</p>
-
-		<h2>Fay Plays Nice with Everyone</h2>
-		<p>Fay was built with the wonderful Raphael.js library and with compatibility in mind. Icons will render and animate beautifully on tons of browsers.</p>
-
-		<h2>Options, Options, Options</h2>
-		<p>Fay was built to be as creative and flexible as you are. Tons of options can be adjusted right in the html for quick and flexible designs. Your icon library shouldn't lock you in.</p>
-		<p><code>data-fay-scale</code> - Scale the icons to be any size. Default is 50. Number only - do not include px.</p>
-		<p><code>data-fay-stroke</code> - Change the stroke width of the icon. Default is 2. Scales automatically if not declared.</p>
-
-		<h2>Need it inside an element? Yeah, Fay does that, too.</h2>
-		<p>Here is an example with a bootstrap button: <pre>&lt;button class="btn btn-default fay-caret"&gt; Drop it like it's hot &lt;/button&gt;</pre> renders this:</p>
-		<button class="btn btn-default fay-chevron" data-fay-size="10"> Drop it like it's hot</button>
-
-		<div class="fay-menu"></div>
-		<div class="fay-menu fay-menu-spin-open"></div>
-		<div class="fay-menu fay-menu-float" data-fay-size="200"></div>
-		<div class="fay-chevron fay-chev-flip-down" data-fay-size="100"></div>
-	</div>
-
 	<script src="scripts/lib/jquery-1.11.1.min.js"></script>
 	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 	<script src="scripts/lib/raphael.js"></script>
-	<script src="scripts/Fay.js"></script>
+	<script src="scripts/Fay.min.js"></script>
+	<script src="scripts/main.js"></script>
 </body>
 </html>

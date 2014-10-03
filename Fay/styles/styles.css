@@ -4,6 +4,30 @@ html{
 body{
 	font-family: 'Open Sans', 'Helvetica Neue', Arial;
 }
+.menu{
+	position:fixed;
+	right:0;
+	top:0;
+	margin:5px 10px 0 0;
+}
+.menu ul {
+	margin: 75px 0 0 0;
+}
+.menu ul li{
+	list-style: none;
+	background: rgba(255,255,255,.8);
+		background: -moz-linear-gradient(right, rgba(255,255,255,.8) 0%, rgba(246,246,246,0.5) 60%, rgba(255,255,255,0) 100%);
+		background: -webkit-gradient(right top, right top, color-stop(0%, rgba(255,255,255,.8)), color-stop(60%, rgba(246,246,246,0.5)), color-stop(100%, rgba(255,255,255,0)));
+		background: -webkit-linear-gradient(right, rgba(255,255,255,.8) 0%, rgba(246,246,246,0.5) 60%, rgba(255,255,255,0) 100%);
+		background: -o-linear-gradient(right, rgba(255,255,255,.8) 0%, rgba(246,246,246,0.5) 60%, rgba(255,255,255,0) 100%);
+		background: -ms-linear-gradient(right, rgba(255,255,255,.8) 0%, rgba(246,246,246,0.5) 60%, rgba(255,255,255,0) 100%);
+		background: linear-gradient(to left, rgba(255,255,255,.8) 0%, rgba(246,246,246,0.5) 60%, rgba(255,255,255,0) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 );
+	max-width: 200px;
+	margin: 5px 0 0 0;
+	padding: 10px;
+	text-align: right;
+}
 .jumbotron{
 	background: -webkit-linear-gradient(90deg, #4CB8C4 10%, #3CD3AD 90%); /* Chrome 10+, Saf5.1+ */
 	background:    -moz-linear-gradient(90deg, #4CB8C4 10%, #3CD3AD 90%); /* FF3.6+ */
@@ -24,11 +48,6 @@ body{
 code{
 	color:#F55EA6;
 	background-color:#f2f2f2;
-}
-.menu{
-	position:absolute;
-	right:0;
-	margin:5px 10px 0 0;
 }
 code.attr{
 	color:#1CAD89;
