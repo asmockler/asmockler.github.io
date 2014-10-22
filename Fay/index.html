@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Fay | Animated SVG Icons</title>
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+<!-- 	<div class="menu">
+		<div class="fay-menu-float fay-menu-spin-close pull-right" data-fay-color="white" data-fay-size="75px" data-fay-opacity=".75"></div>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Docs</a></li>
+			<li><a href="#">GitHub</a></li>
+		</ul>
+	</div> -->
+	
+	<div class="jumbotron">
+		<div class="container">
+			<h1 class="text-center">Fay.js</h1>
+			<p class="lead text-center">An animated SVG icon library for <br> discerning developers</p>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<h2 class="col-xs-12 text-center">Fay is an easy-to-implement animated icon library built with flexibility in mind.</h2>
+
+			<div class="col-md-4 text-center">
+				<div class="fay-menu-spin" data-fay-scale="4"></div>
+				<p>Icons are added to any element simply by adding classes such as <code>.fay-menu</code> or <code>.fay-chevron</code>.</p>
+			</div>
+			<div class="col-md-4 text-center">
+				<div class="fay-chevron-flip" data-fay-scale="4"></div>
+				<p>Fay icons are drawn as svg in the browser - this means that they will never be pixelated and are infinitely scalable.</p>
+			</div>
+			<div class="col-md-4 text-center">
+				<div class="fay-play-stop" data-fay-scale="4"></div>
+				<p>Fay is built with the wonderful Raphael.js library. Icons will render and animate beautifully in tons of browsers.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-9">
+				<h1>Documentation</h1>
+				<code>Classes</code> <code class="attr">Attributes</code>
+				<p>In bootstrap buttons, line-height may need to be set to 0.</p>
+				<h1>Global Attributes</h1>
+				<ul>
+					<li><code class="attr">data-fay-scale</code> - Default is 2x the page <code>&lt;p&gt;</code> font-size.</li>
+					<li><code class="attr">data-fay-size</code> - Overrides automatic sizing. An absolute size for an icon in px.</li>
+					<li><code class="attr">data-fay-stroke</code> - Override for default/automatic stroke-width scaling.</li>
+					<li><code class="attr">data-fay-color</code> - Overrides default color (icons default to color of <code>&lt;p&gt;</code> element.</li>
+					<li><code class="attr">data-fay-speed</code> - Overrides default animation speed. Integer in miliseconds.</li>
+					<li><code class="attr">data-fay-opacity</code> - sets opacity of given icon (from 0 to 1)</li>
+				</ul>
+				<h3>A Note About Colors</h3>
+				<p>Fay's color will be automatically set to whatever is decalred for the <code>&lt;p&gt;</code> element. Colors can be changed via css or data-attribute.</p>
+				<p><strong>Via CSS</strong></p>
+				<p>Change the color of any of Fay's classes to flobally change color for the elements.</p>
+				<pre>.fay-menu-spin{ color: 'red'; }</pre>
+				<p>Alternately, use CSS3 <code>[class*=fay-]</code> to change the color of all icons.</p>
+				<p><strong>Via data-attribute</strong></p>
+				<p>Use the <code class="attr">data-fay-color</code> attribute to change colors of individual elements.</p>
+				<h3>A Note on Sizing</h3>
+				<p>By default, icons are sized to 2x your page's <code>&lt;p&gt;</code>, rounded to the nearest 5 to maximize performance. This can be overridden either with <code class="attr">data-fay-scale</code> or <code class="attr">data-fay-size</code>.</p>
+				<p><strong>Via <code class="attr">data-fay-scale</code></strong></p>
+				<p>Scale is a relative measure based on the page's font-size for the <code>&lt;p&gt;</code> element. Accepts integers. For example, <code class="attr">data-fay-scale=4</code> would size an icon to 4x the page's font-size.</p>
+				<p><strong>Via <code class="attr">data-fay-size</code></strong></p>
+				<p>Size is an absolute scale in px for icon size. Accepts integers.</p>
+				<h1>Icons</h1>
+				<h2>Menu</h2>
+				<div class="row text-center">
+					<div class="col-md-2 fay-menu"><p>Default</p></div>
+					<div class="col-md-2 fay-menu-spin"><p>Spin</p></div>
+					<div class="col-md-2 fay-menu-float"><p>Float</p></div>
+					<div class="col-md-2 fay-menu-fold"><p>Fold</p></div>
+				</div>
+				<p><strong>Options</strong></p>
+				<ul>
+					<li><code>fay-menu</code>, <code>fay-menu-spin</code>, <code>fay-menu-float</code>, <code>fay-menu-fold</code></li>
+					<li>Mix-and-match opening and closing animations i.e. <code>fay-menu-float-open</code> and <code>fay-menu-spin-close</code> <span class="fay-menu-float-open fay-menu-spin-close" data-fay-scale=".75"></span></li>
+				</ul>
+				<h2>Chevron</h2>
+				<div class="row text-center">
+					<div class="col-md-2 fay-chevron"><p>Default</p></div>
+					<div class="col-md-2 fay-chevron-flip"><p>Flip</p></div>
+					<div class="col-md-2 fay-chevron-spring"><p>Spring</p></div>
+					<div class="col-md-2 fay-chevron-fan"><p>Fan</p></div>
+				</div>
+				<p><strong>Options</strong></p>
+				<ul>
+					<li>
+						<code>fay-chevron</code>,
+						<code>fay-chevron-flip</code>,
+						<code>fay-chevron-spring</code>,
+						<code>fay-chevron-fan</code>
+					</li>
+					<li>Mix-and-match opening and closing animations i.e. <code>fay-chevron-flip-open</code> and <code>fay-menu-default-close</code> <span class="fay-chevron-flip fay-chevron-default-close" data-fay-scale=".75"></span></li>
+				</ul>
+				<h2>Carets</h2>
+				<div class="row text-center">
+					<div class="col-md-2 fay-caret-spin"><p>Spin 90&deg;</p></div>
+					<div class="col-md-2 fay-caret-spin-down"><p>Spin 180&deg;</p></div>
+					<div class="col-md-2 fay-caret-flip"><p>Flip 90&deg;</p></div>
+					<div class="col-md-2 fay-caret-flip-down"><p>Flip 180&deg;</p></div>
+				</div>
+				<p><strong>Options</strong></p>
+				<ul>
+					<li><code>fay-caret-spin</code> or <code>fay-caret-flip</code></li>
+					<li>By default, points right and rotates 90&deg;.</li>
+					<li>Change starting direction and behavior with <code>fay-caret-spin-[starting direction]</code> or <code>fay-caret-flip-[starting direction]</code></li>
+					<li>Up or Down carets rotate 180&deg; by default; right and left carets rotate 90&deg;.</li>
+					<li>Change ending position with <code class="attr">data-fay-destination</code></li>
+				</ul>
+				<h2>Play, Pause, and Stop</h2>
+				<div class="row text-center">
+					<div class="col-md-2 fay-play-default"><p>Default</p></div>
+					<div class="col-md-2 fay-play-zoom"><p>Zoom</p></div>
+					<div class="col-md-2 fay-play-stop"><p>Play to Stop</p></div>
+				</div>
+				<p><strong>Options</strong></p>
+				<ul>
+					<li><code>fay-play</code>, <code>fay-play-zoom</code>, or <code>fay-play-stop</code></li>
+					<li>Starting status can be reversed by setting <code class="attr">data-fay-play</code> to "false"</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script src="scripts/lib/jquery-1.11.1.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<script src="scripts/lib/raphael.js"></script>
+	<script src="scripts/Fay.js"></script>
+	<script src="scripts/main.js"></script>
+</body>
+</html>
