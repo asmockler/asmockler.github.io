@@ -4,21 +4,22 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Fay Test Page</title>
+	<title>Fay | Animated SVG Icons</title>
 	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
 
-	<div class="menu">
+<!-- 	<div class="menu">
 		<div class="fay-menu-float fay-menu-spin-close pull-right" data-fay-color="white" data-fay-size="75px" data-fay-opacity=".75"></div>
 		<ul>
-			<li>Test</li>
-			<li>Again</li>
-			<li>So long.</li>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Docs</a></li>
+			<li><a href="#">GitHub</a></li>
 		</ul>
-	</div>
+	</div> -->
+	
 	<div class="jumbotron">
 		<div class="container">
 			<h1 class="text-center">Fay.js</h1>
@@ -26,34 +27,28 @@
 		</div>
 	</div>
 	<div class="container">
-		<h2>Fay is an easy-to-implement animated icon library.</h2>
-		<p>Icons are added to any element by including simple class names such as <code>.fay-menu</code> or <code>.fay-chevron</code>.</p>
+		<div class="row">
+			<h2 class="col-xs-12 text-center">Fay is an easy-to-implement animated icon library built with flexibility in mind.</h2>
 
-		<h2>Say Goodbye to Rough Edges</h2>
-		<p>Fay icons are drawn with svg in the browser - this means that they will never be pixelated and are infinitely scalable.</p>
-
-		<h2>Fay Plays Nice with Everyone</h2>
-		<p>Fay was built with the wonderful Raphael.js library and with compatibility in mind. Icons will render and animate beautifully on tons of browsers.</p>
-
-		<h2>Options, Options, Options</h2>
-		<p>Fay was built to be as creative and flexible as you are. Tons of options can be adjusted right in the html for quick and flexible designs. Your icon library shouldn't lock you in.</p>
-		<p><code>data-fay-scale</code> - Scale the icons to be any size. Default is 50. Number only - do not include px.</p>
-		<p><code>data-fay-stroke</code> - Change the stroke width of the icon. Default is 2. Scales automatically if not declared.</p>
-
-		<h2>Need it inside an element? Yeah, Fay does that, too.</h2>
-		<p>Here is an example with a bootstrap button: <pre>&lt;button class="btn btn-default fay-caret"&gt; Drop it like it's hot &lt;/button&gt;</pre> renders this:</p>
-		<button class="btn btn-default fay-chevron" data-fay-size="10"> Drop it like it's hot</button>
-
-		<div class="fay-menu"></div>
-		<div class="fay-menu fay-menu-spin-open"></div>
-		<div class="fay-menu fay-menu-float" data-fay-size="200"></div>
-		<div class="fay-chevron fay-chev-flip-down" data-fay-size="100"></div>
+			<div class="col-md-4 text-center">
+				<div class="fay-menu-spin" data-fay-scale="4"></div>
+				<p>Icons are added to any element simply by adding classes such as <code>.fay-menu</code> or <code>.fay-chevron</code>.</p>
+			</div>
+			<div class="col-md-4 text-center">
+				<div class="fay-chevron-flip" data-fay-scale="4"></div>
+				<p>Fay icons are drawn as svg in the browser - this means that they will never be pixelated and are infinitely scalable.</p>
+			</div>
+			<div class="col-md-4 text-center">
+				<div class="fay-play-stop" data-fay-scale="4"></div>
+				<p>Fay is built with the wonderful Raphael.js library. Icons will render and animate beautifully in tons of browsers.</p>
+			</div>
+		</div>
 	</div>
 
-	<div class="container" style="min-height:1000px;margin-bottom:250px">
+	<div class="container">
 		<div class="row">
-			<div class="col-md-9 col-md-offset-1">
-				<h1>Temporary Docs</h1>
+			<div class="col-md-9">
+				<h1>Documentation</h1>
 				<code>Classes</code> <code class="attr">Attributes</code>
 				<p>In bootstrap buttons, line-height may need to be set to 0.</p>
 				<h1>Global Attributes</h1>
@@ -142,7 +137,7 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
 	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 	<script src="scripts/lib/raphael.js"></script>
-	<script src="scripts/Fay.min.js"></script>
+	<script src="scripts/Fay.js"></script>
 	<script src="scripts/main.js"></script>
 </body>
 </html>

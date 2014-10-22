@@ -3,6 +3,7 @@ html{
 }
 body{
 	font-family: 'Open Sans', 'Helvetica Neue', Arial;
+	margin: 0 0 40px 0;
 }
 .menu{
 	position:fixed;
