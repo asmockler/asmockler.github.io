@@ -1,4 +1,7 @@
 (function () {
+	if (typeof jQuery === 'undefined') { throw new Error('Fay requires jQuery') }
+	if (typeof Raphael === 'undefined') { throw new Error('Fay requires Raphael.js') }
+	
 	var fay = {
 		Easings : {
 			'easeIn'    : 'cubic-bezier(.97,.01,.76,.76)', 
@@ -854,7 +857,11 @@
 		},
 		init : function ( selector ){
 			if ( selector ){
-				var selector = selector;
+				if ( typeof selector === 'string' ) {
+					var selector = selector;
+				} else {
+					throw new Error('Initialization selector must be a string');
+				}
 			} else {
 				var selector;
 			}
@@ -864,11 +871,25 @@
 			fay.menu(selector);
 			fay.play(selector);
 			fay.properties(selector);
+		},
+		destroy : function ( selector ){
+			if ( selector ) {
+				var els = $(selector).find("[class*='fay-']");
+			} else {
+				var els = $("[class*='fay-']");
+			}
+			els.empty();
 		}
 	}
 
-	Fay = fay;
+	window.Fay = fay;
 
-	return Fay;
+	if (typeof window.define === "function" && window.define.amd) {
+	  window.define("fay", [], function() {
+	    return window.Fay;
+	  });
+	} else {
+		return window.Fay;
+	}
 
 }());
