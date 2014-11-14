@@ -619,7 +619,7 @@
 			if ( selector ) {
 				var els = $(selector).find("[class*='fay-play']")
 			} else {
-				var els = $("[class*='fay-play'");
+				var els = $("[class*='fay-play']");
 			}
 			els.each(function ( i ){
 				/////////////////////
