@@ -28,3 +28,11 @@ changeSubText();
 window.setInterval(function(){
   changeSubText();
 }, 2500);
+
+$(document).scroll(function(){
+	if ( $(this).scrollTop() > 300 ){
+		$('.navbar').css('background', 'rgba(0,0,0,.5)')
+	} else if ( $(this).scrollTop() < 300 ) {
+		$('.navbar').css('background', 'rgba(0,0,0,0')
+	}
+});

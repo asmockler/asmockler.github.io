@@ -48,6 +48,10 @@ body {
 	font-size:17px;
 }
 
+#sub-title {
+	text-shadow: 0 0 10px rgba(0,0,0,1);
+}
+
 h2{
 	font-size:40px;
 	font-weight:300;
@@ -66,13 +70,16 @@ h2{
 .navbar {
 	background:transparent;
 	border:none;
+	transition: all .3s;
+	-webkit-transition: all .3s;
 }
 
 .navbar-default .navbar-nav>li>a{
 	color:white;
 	opacity:.8;
-	transition: all .3s;
-	-webkit-transition: all .3s;
+	transition: all 1.5s;
+	-webkit-transition: all 1.5s;
+	font-size:16px;
 }
 
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
@@ -118,6 +125,10 @@ hr {
 
 .panel p {
 	font-size: 14px;
+}
+
+.panel .btn {
+	font-size: 16px;
 }
 
 @media all and (min-width: 768px) {
