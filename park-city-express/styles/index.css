@@ -35,7 +35,7 @@ body {
 }
 
 #banner img {
-	margin-top:10%;
+	margin-top:70px;
 }
 
 #banner hr {
@@ -53,11 +53,7 @@ h2{
 	font-weight:300;
 }
 
-#main-logo {
-	width:350px;
-}
-
-#banner button {
+#banner a.btn {
 	margin-top:20px;
 	font-size: 27px;
 	font-weight:300;
@@ -100,7 +96,21 @@ main p {
 	font-size: 18px;
 }
 
+hr {
+	width: 50%;
+	border-top: 1px solid #ddd;
+	margin-bottom: 50px;
+}
+
+#main-copy {
+	margin: 15px 0;
+}
+
 /* !!!!!! PANEL STYLES !!!!!! */
+
+#pricing {
+	margin-bottom: 50px;
+}
 
 .panel h2 {
 	font-size: 30px;
@@ -108,6 +118,12 @@ main p {
 
 .panel p {
 	font-size: 14px;
+}
+
+@media all and (min-width: 768px) {
+	#pricing #first-panel {
+		margin-left: 12.66666%;
+	}
 }
 
 
