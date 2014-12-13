@@ -36,3 +36,5 @@ $(document).scroll(function(){
 		$('.navbar').css('background', 'rgba(0,0,0,0')
 	}
 });
+
+Fay.init();

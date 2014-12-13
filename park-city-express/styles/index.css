@@ -9,6 +9,8 @@ body {
 	font-weight:300;
 }
 
+/* MAIN BANNER */
+
 #banner {
 	background: url("../assets/rm5sxvY.jpg");
 	background-size: cover;
@@ -67,6 +69,8 @@ h2{
 	display:block;
 }
 
+/* NAVBAR */
+
 .navbar {
 	background:transparent;
 	border:none;
@@ -89,6 +93,33 @@ h2{
 
 .navbar-right {
 	padding-right: 45px;
+}
+
+.navbar-default .navbar-nav>li>a.btn {
+	padding: 5px 10px;
+	margin-top: 9px;
+	color: #fff;
+	font-weight: 300;
+	transition: all .35s;
+	-webkit-transition: all .35s;
+	background: transparent;
+}
+
+.navbar-default .navbar-toggle{
+	line-height: 0;
+	border-color: transparent;
+	margin: 0 10px;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+	background:transparent;
+}
+
+@media all and (max-width: 768px) {
+	.navbar-collapse {
+		background: rgba(0,0,0,.85);
+		box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 6px;
+	}
 }
 
 h1 {

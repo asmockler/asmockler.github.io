@@ -38,6 +38,7 @@ $('#sidebar a').on('click', function(e){
 				break;
 		}
 	}
-
 	
 });
+
+Fay.init();

@@ -8,7 +8,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
 		<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
 		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-		<link rel="stylesheet" href="styles/about.css">
+		<link rel="stylesheet" href="styles/template.css">
 	</head>
 	<body>
 
@@ -18,18 +18,17 @@
 		    <div class="navbar-header">
 		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 		        <span class="sr-only">Toggle navigation</span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
+		        <span class="fay-menu-float"></span>
 		      </button>
 		    </div>
 
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav navbar-right">
-		      	<li><a href="reserve-now.html">Reserve Now</a></li>
+		      	<li class="hidden-xs"><a href="reserve-now.html" class="btn btn-info btn-sm">Reserve Now</a></li>
 		        <li><a href="index.html">Home</a></li>
-		        <li><a href="#">Careers</a></li>
+		        <li><a href="careers.html">Careers</a></li>
+		        <li class="visible-xs"><a href="reserve-now.html">Reserve Now</a></li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
@@ -112,8 +111,8 @@
 					<div class="col-md-3">
 						<address>
 						  <p class="lead">Park City Express</p><br>
-						  795 Folsom Ave, Suite 600<br>
-						  San Francisco, CA 94107<br>
+						  12345 Office Address<br>
+						  Salt Lake City, UT, 12345<br>
 						  <i class="fa fa-envelope-o"></i> email@email.com <br>
 						  <i class="fa fa-phone"></i> (435) 602-9444
 						</address>
@@ -136,6 +135,8 @@
 		<script src="http://code.jquery.com/jquery.js"></script>
 		<!-- Bootstrap JavaScript -->
 		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js"></script>
+		<script src="scripts/Fay.js"></script>
 		<script src="scripts/about.js"></script>
 	</body>
 </html>
