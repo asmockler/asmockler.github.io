@@ -81,6 +81,10 @@ p {
 		background: #fff;
 		box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 6px;
 	}
+
+	.navbar-header {
+		background: white;
+	}
 }
 
 /* SIDEBAR */
