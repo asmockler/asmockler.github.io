@@ -71,6 +71,10 @@ h2{
 
 /* NAVBAR */
 
+.fay-menu-float { 
+	color: #fff 
+}
+
 .navbar {
 	background:transparent;
 	border:none;
