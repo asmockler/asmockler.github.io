@@ -132,3 +132,26 @@ footer address p.lead {
 	opacity: .85;
 	margin-bottom: -15px;
 }
+
+footer a {
+	color: white;
+	opacity:.9;
+}
+
+footer a:hover, footer a:focus {
+	color:white;
+	opacity:1;
+	text-decoration: none;
+}
+
+@media all and (max-width: 768px) {
+	main {
+		padding-bottom: 300px;
+	}
+	footer {
+		padding: 20px 0;
+	}
+	footer p.lead {
+		font-size:20px;
+	}
+}
