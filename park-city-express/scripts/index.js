@@ -25,9 +25,9 @@ var changeSubText = function () {
 
 // changeSubText();
 
-window.setInterval(function(){
-  changeSubText();
-}, 2500);
+//window.setInterval(function(){
+//  changeSubText();
+//}, 2500);
 
 $(document).scroll(function(){
 	if ( $(this).scrollTop() > 300 ){
