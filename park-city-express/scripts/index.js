@@ -23,7 +23,7 @@ var changeSubText = function () {
 	});
 }
 
-changeSubText();
+// changeSubText();
 
 window.setInterval(function(){
   changeSubText();
