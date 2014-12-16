@@ -104,6 +104,10 @@ p {
 	text-decoration: none;
 }
 
+#sidebar ul li ul {
+	padding: 0 30px;
+}
+
 #sidebar img {
 	padding: 25px 20px;
 }

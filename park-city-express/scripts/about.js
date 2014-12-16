@@ -32,8 +32,36 @@ var changeSection = function (picked) {
 				$('#terms-link').addClass('active');
 			});
 			break;
+		case 'Privacy':
+			$('.visible').fadeOut(300, function(){
+				$('.visible').removeClass('visible');
+				$('.active').removeClass('active');
+				$('#privacy').addClass('visible').fadeIn(300);
+				$('#privacy-link').addClass('active');
+			});
+			break;
+		case 'Security':
+			$('.visible').fadeOut(300, function(){
+				$('.visible').removeClass('visible');
+				$('.active').removeClass('active');
+				$('#security').addClass('visible').fadeIn(300);
+				$('#security-link').addClass('active');
+			});
+			break;
+		case 'Cancellation &amp; Refund':
+			$('.visible').fadeOut(300, function(){
+				$('.visible').removeClass('visible');
+				$('.active').removeClass('active');
+				$('#cancel').addClass('visible').fadeIn(300);
+				$('#cancel-link').addClass('active');
+			});
+			break;
 	}
 }
+
+$('#terms-link').on('mouseenter mouseleave', function(){
+	$('#sub-terms').fadeToggle();
+});
 
 $('#sidebar a').on('click', function(e){
 	if ($(this).hasClass('active')) {
