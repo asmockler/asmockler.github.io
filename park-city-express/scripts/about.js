@@ -119,8 +119,8 @@ var router = function(location){
 
 var initialize = function() {
 	router(location.hash);
-	Fay.init();
 	events();
+	Fay.init();
 }
 
 initialize();
