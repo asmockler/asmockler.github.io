@@ -118,7 +118,12 @@ var router = function(location){
 
 
 var initialize = function() {
-	router(window.location.hash);
+	if ( $.browser.webkit ) {
+		var location = location.hash
+	} else {
+		var location = window.location.hash
+	}
+	router(location);
 	Fay.init();
 	events();
 }
