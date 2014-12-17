@@ -101,7 +101,7 @@ h2{
 
 .navbar-default .navbar-nav>li>a.btn {
 	padding: 5px 10px;
-	margin-top: 9px;
+	margin: 9px 10px 0 0;
 	color: #fff;
 	font-weight: 300;
 	transition: all .35s;
@@ -198,6 +198,17 @@ footer address p.lead {
 	footer {
 		padding: 20px 0;
 	}
+}
+
+footer a {
+	color: white;
+	opacity:.9;
+}
+
+footer a:hover, footer a:focus {
+	color:white;
+	opacity:1;
+	text-decoration: none;
 }
 
 

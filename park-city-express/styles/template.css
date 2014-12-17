@@ -36,6 +36,8 @@ p {
 .navbar {
 	background:transparent;
 	border:none;
+	transition: all .3s;
+	-webkit-transition: all .3s;
 }
 
 .navbar-default .navbar-nav>li>a{
@@ -57,7 +59,7 @@ p {
 
 .navbar-default .navbar-nav>li>a.btn {
 	padding: 5px 10px;
-	margin-top: 9px;
+	margin: 9px 10px 0 0;
 	font-weight: 300;
 	background:transparent;
 }
