@@ -76,6 +76,7 @@ var events = function () {
 
 	$('#sections').on('change', function(){
 		changeSection($(this).val(), 300);
+		window.location.hash = '/' + $(this).val().toLowerCase().split(" ").join("-");
 	});
 }
 
@@ -97,28 +98,36 @@ var router = function(location){
 			break;
 		case "#/our-mission":
 			route('mission');
+			$('option:contains("Mission")').attr('selected', true);
 			break;
 		case "#/our-drivers":
 			route('drivers');
+			$('option:contains("Drivers")').attr('selected', true)
 			break;
 		case "#/terms-of-service":
 			route('terms');
+			$('option:contains("Terms")').attr('selected', true)
 			break;
 		case "#/privacy":
-			route('privacy')
+			route('privacy');
+			$('option:contains("Privacy")').attr('selected', true)
 			break;
 		case "#/security":
 			route('security');
+			$('option:contains("Security")').attr('selected', true)
 			break;
 		case "#/cancellation-and-refund":
 			route('cancel');
+			$('option:contains("Refund")').attr('selected', true)
 			break;
 	}
 }
 
 
 var initialize = function() {
-	router(location.hash);
+	page = location.hash
+	router(page);
+
 	events();
 	Fay.init();
 }
