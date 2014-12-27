@@ -65,8 +65,18 @@ h2{
 	font-weight:300;
 }
 
+#banner .events a.btn {
+	font-size:15px;
+	font-weight:100;
+	border-radius:0;
+}
+
 #banner span {
 	display:block;
+}
+
+#banner p.lead {
+	text-shadow: 0 0 15px black;
 }
 
 /* NAVBAR */
@@ -166,7 +176,7 @@ hr {
 	font-size: 16px;
 }
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 991px) {
 	#pricing #first-panel {
 		margin-left: 12.66666%;
 	}
