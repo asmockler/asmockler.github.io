@@ -1,0 +1,57 @@
+h1 {
+	font-weight: 700;
+	font-size: 120px;
+	letter-spacing: -11px;
+	color: #222;
+	text-shadow: 0 0 40px rgba(255,255,255,.5);
+}
+
+div.home-header {
+	position: relative;
+	height: 100%;
+	/*background: url("assets/hero.jpg") center center no-repeat;*/
+	background-size: cover;
+}
+
+div.home-header:before {
+	content: " ";
+	opacity: 0.25;
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: white;
+	z-index:1;
+}
+
+div.home-header:after {
+	content: " ";
+	opacity: 0.75;
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	/*background: -webkit-linear-gradient(315deg, #E55D87 10%, #5FC3E4 90%);*/ /* Chrome 10+, Saf5.1+ */
+	/*background:    -moz-linear-gradient(315deg, #E55D87 10%, #5FC3E4 90%);*/ /* FF3.6+ */
+	/*background:     -ms-linear-gradient(315deg, #E55D87 10%, #5FC3E4 90%);*/ /* IE10 */
+	/*background:      -o-linear-gradient(315deg, #E55D87 10%, #5FC3E4 90%);*/ /* Opera 11.10+ */
+	/*background:         linear-gradient(315deg, #E55D87 10%, #5FC3E4 90%);*/ /* W3C */
+}
+
+div.home-header .content {
+	position: relative;
+	z-index: 5;
+	max-width: 1000px;
+	margin: auto;
+	padding-top: 100px;
+}
+
+.home-img {
+	border-radius: 100%;
+	width: 250px;
+	margin: auto;
+}
