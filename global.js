@@ -1,4 +1,3 @@
-document.body.style.display = "none";
 $(document).ready(function () {
 	$('body').fadeIn(750);
 	Fay.init();
