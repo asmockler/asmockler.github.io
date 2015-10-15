@@ -42,7 +42,7 @@ h2 {
 
 h2.small {
 	font-size: 55px;
-	color: #000;	
+	color: #000;
 	margin-top: 0;
 }
 
@@ -139,4 +139,11 @@ h2.small {
 
 .skills i {
 	font-size: 100px;
+}
+
+@media all and (max-width: 500px) {
+	.page-header h1 { font-size: 85px; }
+	h2 { font-size: 60px; }
+	h2.small { font-size: 35px; }
+	p.lead { font-size: 20px; }
 }

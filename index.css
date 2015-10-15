@@ -6,6 +6,11 @@ h1 {
 	text-shadow: 0 0 40px rgba(255,255,255,.5);
 }
 
+@media all and (max-width: 500px) {
+	h1 { font-size: 100px; }
+	p.lead { font-size: 25px; }
+}
+
 div.home-header {
 	position: relative;
 	height: 100%;

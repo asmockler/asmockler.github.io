@@ -15,6 +15,12 @@ h1 {
 	font-weight: 300;
 }
 
+@media all and (max-width: 500px) {
+	h1 {
+		font-size: 100px;
+	}
+}
+
 a:hover {
 	text-decoration: none!important;
 }
@@ -33,8 +39,8 @@ a:hover {
 .sidenav {
 	position: fixed;
 	z-index: 9;
-	background: rgb(255,255,255);
-	box-shadow: 0 0 20px rgba(0,0,0,.35);
+	background: rgb(0,0,0);
+	box-shadow: 0 0 20px rgba(0,0,0,.45);
 	top: 0;
 	bottom: 0;
 	left: -400px;
@@ -56,14 +62,14 @@ a:hover {
 
 .sidenav ul li {
 	padding: 8px 0 8px 30px;
-	transition: background 0.5s;
-	-o-transition: background 0.5s;
-	-moz-transition: background 0.5s;
-	-webkit-transition: background 0.5s;
+	transition: color 0.5s;
+	-o-transition: color 0.5s;
+	-moz-transition: color 0.5s;
+	-webkit-transition: color 0.5s;
 }
 
 .sidenav ul li:hover {
-	background: rgba(255, 255, 255, 0.3);
+	color: white;
 }
 
 .sidenav a {

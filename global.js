@@ -1,7 +1,7 @@
 $(document).ready(function () {
-	$('body').fadeIn(750);
 	Fay.init();
 
+	$('body').hide().fadeIn(750);
 
 	var menuOpen = false;
 	$('.menu-btn').on('click', function (e) {
