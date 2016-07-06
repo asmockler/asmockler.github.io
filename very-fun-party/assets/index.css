@@ -1,0 +1,52 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Times New Roman', 'Times', serif;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  position: relative;
+}
+
+h1 {
+  font-size: 160px;
+  font-weight: 800;
+  letter-spacing: -4px;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.asterisk {
+  font-family: Arial;
+}
+
+.subtext {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 22px;
+}
+
+.floating-emoji {
+  position: fixed;
+  font-size: 28px;
+  top: 0;
+
+  animation: fall-from-top 4000ms linear infinite both;
+}
+
+/*
+This is the basic idea for the animation. In reality, this is dynamically added
+via javascript so that it can transform based on the window height. thx
+
+@keyframes fall-from-top {
+  0% { transform: translateY(-100px); }
+  100% { transform: translateY(2000px); }
+}
+*/
