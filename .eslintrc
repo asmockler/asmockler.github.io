@@ -1,0 +1,5 @@
+// This file will ONLY AFFECT EDITOR INTEGRATIONS.
+// Actual linting rules are provided by react-scripts via create-react-app.
+{
+  "extends": "react-app"
+}
