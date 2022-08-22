@@ -1,7 +1,6 @@
 {
   "name": "asmockler.github.io",
   "version": "1.0.0",
-  "main": "index.js",
   "repository": "git@github.com:asmockler/asmockler.github.io",
   "author": "Andy Mockler <asmockler@gmail.com>",
   "license": "MIT",
@@ -9,7 +8,8 @@
     "node": ">=18.7.0"
   },
   "scripts": {
-    "start": "parcel serve src/index.html"
+    "start": "parcel serve src/index.html",
+    "build": "parcel build src/index.html"
   },
   "devDependencies": {
     "parcel": "^2.7.0",
