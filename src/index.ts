@@ -12,7 +12,7 @@ function setUpGrid() {
   const charSize = getCharSize();
   const dimension = Math.min(window.innerWidth, window.innerHeight);
 
-  const margin = dimension > 600 ? 120 : 32;
+  const margin = dimension > 600 ? 120 : 16;
 
   const maxGridSize = Math.floor(
     (dimension - margin) / Math.max(charSize.width, charSize.height)
