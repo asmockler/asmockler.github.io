@@ -37,11 +37,11 @@ jobs:
       - name: Install dependencies 📦
         run: yarn install --frozen-lockfile
       - name: Build site
-        run: yarn parcel build src/index.html
+        run: yarn build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: "./build"
+          path: "./dist"
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
