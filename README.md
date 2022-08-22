@@ -1,5 +1,6 @@
 # asmockler.github.io
 
-## Todo
-* [ ] Prettier?
+## Getting started
 
+- `yarn install`
+- `yarn start`

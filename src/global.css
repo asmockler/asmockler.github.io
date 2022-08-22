@@ -1,0 +1,64 @@
+:root {
+  --font-stack: "SF Mono", Consolas, "Andale Mono WT", "Andale Mono",
+    "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono",
+    "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco,
+    "Courier New", Courier, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: var(--font-stack);
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #111;
+  color: #fff;
+  color: color(display-p3 1 1 1);
+  height: 100vh;
+}
+
+main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+
+p {
+  padding-bottom: 16px;
+  max-width: 400px;
+}
+
+pre {
+  font-family: var(--font-stack);
+  margin: 0;
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  margin-top: 16px;
+}
+
+a {
+  color: rgb(32, 255, 175);
+  color: color(display-p3 0.125 1 0.687);
+  font-size: 12px;
+}
+
+#animation-container {
+  position: absolute;
+  z-index: -1;
+  color: #222;
+  pointer-events: none;
+  user-select: none;
+}
